@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as XLSX from "xlsx";
 import { useNavigate } from "react-router-dom";
-import adminBackground from "C:/Users/hp/Desktop/fullstack/login-page/src/adminback.jpg"; // Adjust path
 
 const Admin = () => {
   const navigate = useNavigate();
@@ -40,7 +39,7 @@ const Admin = () => {
   };
 
   return (
-    <div style={{ ...styles.container, backgroundImage: `url(${adminBackground})` }}>
+    <div style={{ ...styles.container }}>
       <div style={styles.welcomeMessage}>Welcome Admin</div>
       <button onClick={handleLogout} style={styles.logoutButton}>
         Logout
